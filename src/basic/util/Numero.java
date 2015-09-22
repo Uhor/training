@@ -1,6 +1,6 @@
 package basic.util;
 
-public class Numero<E> implements Comparable{
+public class Numero implements Comparable<Numero>{
 
 	int num;
 	
@@ -8,7 +8,7 @@ public class Numero<E> implements Comparable{
 		num = n;
 	}
 	
-	public int compareTo(Object obj){
+	public int compareTo(Numero obj){
 		Numero ob = (Numero) obj;
 		if(this.num > ob.num) return 1;
 		if(this.num < ob.num) return -1;

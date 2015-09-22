@@ -1,6 +1,6 @@
 package basic.util;
 
-public interface List<E> {
+public interface List<E>{
 	public void add(E e);
 	public E remove(int index);
 	public void remove(E e);

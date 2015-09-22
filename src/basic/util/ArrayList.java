@@ -1,10 +1,12 @@
 package basic.util;
 
-public class ArrayList<E> implements List {
+public class ArrayList<E> implements List{
 
 	protected E[] array;
 	protected int numElementos;
 	
+	
+	@SuppressWarnings("unchecked")
 	public ArrayList(){
 		array = (E[]) new Object[10];
 		numElementos = 0;
@@ -18,6 +20,7 @@ public class ArrayList<E> implements List {
 		numElementos++;		
 	}
 	
+	@SuppressWarnings("unchecked")
 	protected void aumentamosTamArray(){
 		E[] arrayAux = (E[]) new Object[(int) (numElementos*1.1)];		
 		for(int i = 0; i < array.length; i++){
@@ -69,8 +72,4 @@ public class ArrayList<E> implements List {
         
         return res;
     }
-
-
-
-	
 }

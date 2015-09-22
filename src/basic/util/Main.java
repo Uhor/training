@@ -1,7 +1,9 @@
 
 package basic.util;
 
-public class Main {
+import basic.ordenacion.*;
+
+public class Main{
 
     public static void main (String args []){
         List<String> lista = new ArrayList();
@@ -56,6 +58,13 @@ public class Main {
         System.out.println(lista2.size());
         System.out.println(lista2.toString());
         
+        System.out.println("ORDENACION");
+        
+        Numero[] a = {new Numero(6),new Numero(3),new Numero(5),new Numero(1),new Numero(8),new Numero(2),new Numero(4),new Numero(7)};
+        
+        Ordenacion ord = new Ordenacion();
+        
+        System.out.println(ord.MergeSort(a));
     }
     
     
